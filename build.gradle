@@ -7,7 +7,7 @@ buildscript {
   }
 
   dependencies {
-    classpath 'org.ajoberstar:grgit:2.1.0'
+    classpath 'org.ajoberstar:grgit:2.2.1-rc.3'
   }
 }
 
@@ -18,5 +18,15 @@ plugins {
 task test {
   doLast {
     println "Hello, world!"
+  }
+}
+
+task fastForwardMerge {
+  def branchName = grgit.branch.current().getName()
+  doLast {
+    if (branchName == 'master') {
+      // execute a fast forward merge
+      grgit.push(remote: 'origin', refsOrSpecs: ['HEAD:master'])
+    }
   }
 }
