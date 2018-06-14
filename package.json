@@ -1,0 +1,27 @@
+{
+  "name": "lexicon-ui",
+  "version": "0.1.0",
+  "description": "react components for displaying charts",
+  "main": "index.js",
+  "scripts": {
+    "test": "unittest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sonaak/lexicon-ui.git"
+  },
+  "keywords": [
+    "reactjs",
+    "sonaak",
+    "lexicon",
+    "d3",
+    "charts",
+    "datavis"
+  ],
+  "author": "evilwire",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sonaak/lexicon-ui/issues"
+  },
+  "homepage": "https://github.com/sonaak/lexicon-ui#readme"
+}
