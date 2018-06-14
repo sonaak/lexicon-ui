@@ -2,4 +2,8 @@
 # Gradle files
 **/.gradle/
 
+# installed node modules
 node_modules/
+
+# result of webpack
+dist/
